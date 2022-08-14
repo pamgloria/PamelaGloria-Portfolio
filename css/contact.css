@@ -1,0 +1,139 @@
+* {
+    
+    color:#fff;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Coustard', serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-image: url("/images/paint.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100;
+}
+
+h5 {
+    font-size: 55px;
+}
+
+header {
+    position: relative;
+    top: 0;
+    
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;;
+}
+
+header .nav a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+
+header .nav a:not(:last-child) {
+    margin-right: 100px;
+}
+
+header .nav a:hover {
+   background: rgb(48, 2, 98); 
+}
+
+
+/*contact logo*/
+.flexbox2 {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+
+.flexbox2 img {
+    width: 95%;
+    
+    height: 10%;
+    margin: 5%;
+}
+/*end of contact logo*/
+
+#linkedinLogo {
+    width: 100px;
+    
+}
+
+#githubLogo {
+    width: 100px;
+    
+}
+
+#linkedinLogo:hover {
+    background: rgb(48, 2, 98);
+    border-radius: 10px;
+}
+
+#githubLogo:hover {
+    background: rgba(48, 2, 98);
+    border-radius: 10px;
+    
+}
+
+
+/*flexbox*/
+.flexboxContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    width:fit-content;
+    flex-shrink: inherit;
+    margin: 10px;
+    padding: 20px;
+    
+}
+
+.flexbox {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.flexbox1 {
+    min-width: 400px;
+    text-align: right;
+    
+}
+
+.flexbox2 {
+    min-width: 400px;
+    
+    
+}
+
+.flexbox3 {
+    min-width: 400px;
+    
+    text-align: center;
+    
+}
+
+
+@media only screen and (max-width: 700px) {
+    .contactlogo {
+        display: none;
+    }
+}

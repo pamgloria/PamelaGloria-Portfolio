@@ -1,0 +1,96 @@
+* {
+    color:#fff;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Coustard', serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-image: url("/images/storm.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+/*navbar start*/
+header {
+    position: relative;
+    top: 0;
+    
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;;
+}
+
+header .nav a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .nav a:not(:last-child) {
+    margin-right: 100px;
+}
+
+header .nav a:hover {
+   background: rgb(48, 2, 98); 
+}
+
+/*navbar ends*/
+
+
+/*flex box starts*/
+.main-container {
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    flex: 1;
+    background-color: beige;
+}
+
+.project-info {
+    display: flex;
+    flex: 3;
+    background-color: blue;
+}
+
+.capital-box {
+    flex: 1;
+}
+
+.luvers-box {
+    flex: 1;
+}
+/*flex box ends*/
+
+
+
+/*image size start*/
+.projectlogo {
+    width: 90%;
+}
+
+.mockup {
+    width: 80%;
+}
+
+.github {
+    width: 7%;
+}
+/*image size end*/
