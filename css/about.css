@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("../images/flower.jpg");
+    background-image: url("../images/jelly.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -15,12 +15,14 @@ body {
     width: 100%;
 }
 
+
+/*navbar starts*/
 header {
     position: relative;
     top: 0;
     
     padding: 30px 50px;
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -33,12 +35,11 @@ header .nav a {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 12px 30px;
+    padding: 12px 10px;
     border-radius: 20px;
     transition: 0.3s;
     transition-property: background;
 }
-
 
 header .nav a:not(:last-child) {
     margin-right: 100px;
@@ -47,29 +48,23 @@ header .nav a:not(:last-child) {
 header .nav a:hover {
    background: rgb(48, 2, 98); 
 }
+/*navbar ends*/
 
-/*ABout logo*/
-.flexbox2 {
-    display: flex;
-    align-items: flex-start;
-    padding: 0 1rem;
-}
 
+/*image sizing start*/
 .flexbox2 img {
-    width: 95%;
-    
-    height: 10%;
-    margin: 5%;
+    width: 100%;
 }
-
-
 
 .profile {
-    width: 400px;
+    width: 100%;
     /*clip-path: circle(200px at 200px 400px);*/
     border-radius: 50%;
 }
+/*image sizing end*/
 
+
+/*text sizing start*/
 p {
     font-size: 20px;
 }
@@ -80,49 +75,68 @@ p a {
 
 p a:hover {
     background: rgb(48, 2, 98);
+    border-radius: 7px;
 }
+/*text sizing end*/
 
-/*flexbox*/
+
+/*flexbox start*/
 .flexboxContainer {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin-top: 20px;
-    width: fit-content;
-    flex-shrink: inherit;
     margin: 10px;
-    padding: 20px;
-    
 }
 
 .flexbox {
-    border-radius: 10px;
-    
-}
-
-.flexbox1 {
-    min-width: 400px;
-    text-align: right;
-    /*height: 100px;*/
-}
-
-.flexbox2 {
-    min-width: 400px;
-    
-    
+    flex: 1;
+    margin: 20px;
 }
 
 .flexbox3 {
-    min-width: 400px;
-    
+    flex: 2;
 }
 
+.flexbox.flexbox1 {
+    margin-top: 70px;
+}
 
-@media only screen and (max-width: 700px) {
-    .aboutlogo {
-        display: none;
+.flexbox.flexbox2 {
+    margin-top: 70px;
+}
+/*flexbox end*/
+
+
+@media (min-width: 900px) {
+    .flexboxContainer {
+        display: flex;
+    }  
+}
+
+@media (max-width: 900px) {
+    .flexboxContainer {
+        
+    }
+
+    .profile {
+        margin: 5% auto;
+    }
+
+    .flexbox.flexbox2 {
+        margin: 0 auto;
+    }
+
+    .flexbox3 {
+        padding-bottom: 2%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    p {
+        font-size: 25px;
+        margin: 2% auto;
+    }
+
+    .flexbox3 {
+        margin: 3% auto;
     }
 }

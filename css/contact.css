@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url("../images/paint.jpg");
+    background-image: url("../images/jelly.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@ header .nav a {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 12px 30px;
+    padding: 12px 10px;
     border-radius: 20px;
     transition: 0.3s;
     transition-property: background;
@@ -54,86 +54,105 @@ header .nav a:hover {
 }
 
 
-/*contact logo*/
-.flexbox2 {
-    display: flex;
-    align-items: flex-start;
-    padding: 0 1rem;
-}
-
+/*img start*/
 .flexbox2 img {
-    width: 95%;
-    
-    height: 10%;
-    margin: 5%;
+    width: 90%;
 }
-/*end of contact logo*/
 
-#linkedinLogo {
+.flexbox3 img {
     width: 100px;
-    
 }
 
-#githubLogo {
-    width: 100px;
-    
-}
-
-#linkedinLogo:hover {
+.flexbox3 img:hover {
     background: rgb(48, 2, 98);
     border-radius: 10px;
 }
+/*img end*/
 
-#githubLogo:hover {
-    background: rgba(48, 2, 98);
-    border-radius: 10px;
-    
+
+/*text start*/
+.resume {
+    text-decoration: none;
 }
 
+.resume:hover {
+    background: rgb(48, 2, 98);
+    border-radius: 20px;
+}
 
-/*flexbox*/
+.flexbox3 a {
+    font-size: 20px;
+}
+/*text end*/
+
+
+/*flexbox start*/
 .flexboxContainer {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin-top: 20px;
-    width:fit-content;
-    flex-shrink: inherit;
-    margin: 10px;
-    padding: 20px;
     
+    margin: 10px;
 }
 
 .flexbox {
-    border-radius: 10px;
-    margin-right: 20px;
+    margin: 20px auto;
+    
 }
 
 .flexbox1 {
-    min-width: 400px;
-    text-align: right;
-    
+    text-align: center;
+    margin-top: 5%;
 }
 
-.flexbox2 {
-    min-width: 400px;
-    
-    
+.flexbox1, .flexbox2 {
+    flex: 2;
 }
 
 .flexbox3 {
-    min-width: 400px;
-    
-    text-align: center;
-    
+    flex: 1;
+    margin: 10% 2% auto auto;
 }
 
+.flexbox3 {
+    text-align: center;
+}
+/*flexbox end*/
 
-@media only screen and (max-width: 700px) {
-    .contactlogo {
-        display: none;
+
+@media (min-width: 900px) {
+    .flexboxContainer {
+        display:flex;
     }
 }
+
+@media (max-width: 900px) {
+    .flexbox1 h5 {
+        margin: auto;
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    .flexbox3 {
+        padding-bottom: 5%;
+    }
+
+    .flexbox2 img {
+        margin: auto 20px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .flexbox3 h3{
+        font-size: 30px;
+    }
+
+    .flexbox3 a {
+        font-size: 40px;
+    }
+
+    .flexbox1 h5 {
+        font-size: 70px;
+        margin: 25% auto;
+    }
+}
+

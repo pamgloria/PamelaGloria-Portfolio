@@ -72,7 +72,7 @@ header .nav a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 10px 8px;
     
 }
 
@@ -89,7 +89,7 @@ header .nav a:hover {
 .flexbox3 {
     flex: 1;
     text-align: center;
-    padding: 10% 0;
+    padding: 7% 0 0 0;
 }
 
 .flexbox2 {
@@ -111,7 +111,7 @@ header .nav a:hover {
         font-size: 90px;
     }
     h2 {
-        font-size: 68px;
+        font-size: 60px;
         line-height: 90px;
         margin: 0 10px;
         padding: 0;
