@@ -44,7 +44,7 @@ header .nav a {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 12px 30px;
+    padding: 12px 10px;
     border-radius: 20px;
     transition: 0.3s;
     transition-property: background;
@@ -59,66 +59,66 @@ header .nav a:hover {
    background: rgb(48, 2, 98); 
 }
 
-
-/*Pamela Gloria Logo*/
-.flexbox2 {
-    display: flex;
-    align-items: flex-start;
-    padding: 0 1rem;
-}
-
+/*image sizing*/
 .flexbox2 img {
-    width: 95%;
+    width: 110%;
     
-    height: 10%;
-    margin: 5%;
 }
-/*end of logo*/
+/*image sizing*/
 
 
-
-/*flexbox*/
+/*flex box start*/
 .flexboxContainer {
     background-color: rgba(0, 0, 0, 0.5);
+    
     border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*align-content: center;*/
-    margin-top: 20px;
-    width: fit-content;
-    flex-shrink: inherit;
-    /*margin:10px;*/margin: 4em auto;
-    padding: 30px 70px 30px 70px;
+    margin: 10px 0;
+    
 }
 
 .flexbox {
-    border-radius: 10px;
-    
+    margin: 20px 10px ;
 }
 
 .flexbox1 {
-    min-width: 400px;
-    text-align: right;
-   
-    position:relative;
-}
-
-.flexbox2 {
-    min-width: 400px;
-   
-   
+    flex: 1;
+    text-align: center;
+    padding: 10% 0;
 }
 
 .flexbox3 {
-    min-width: 400px;
-   
+    flex: 1;
+    text-align: center;
+    padding: 10% 0;
 }
 
+.flexbox2 {
+    flex: 1;
+    padding-right: 40px;
+   
+}
+/*flex box end*/
 
-
-@media only screen and (max-width: 700px) {
-    .logo {
-        display: none;
+@media (min-width: 900px) {
+    .flexboxContainer {
+        display: flex;
     }
-} 
+    
+}
+
+@media only screen and (min-width: 1400px) {
+    h3 {
+        font-size: 90px;
+    }
+    h2 {
+        font-size: 68px;
+        line-height: 90px;
+        margin: 0 10px;
+        padding: 0;
+    }
+
+    .flexbox2 img {
+        margin-top: 40px;
+    }
+}
+    
