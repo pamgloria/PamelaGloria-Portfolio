@@ -77,6 +77,10 @@ p a:hover {
     background: rgb(48, 2, 98);
     border-radius: 7px;
 }
+
+.flexbox3 .base {
+    font-size: 19px;
+}
 /*text sizing end*/
 
 
