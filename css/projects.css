@@ -109,7 +109,6 @@ p.column {
 }
 
 .gameover-box {
-    display: flex;
     background-color: rgba(0, 0, 0, 0.5);
     margin:0 0 10px 5px;
     border-radius: 20px;
@@ -117,21 +116,18 @@ p.column {
 
 .portfolio-box {
     background-color: rgba(0, 0, 0, 0.5);
-    display:flex;
     margin: 5px 0 10px 5px;
     border-radius: 20px;
 }
 
 .capital-box {
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
     margin: 5px 0 10px 5px;
     border-radius: 20px;
 }
 
 .luvers-box {
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
     margin: 10px 0 0 5px;
     border-radius: 20px;
 }
@@ -199,10 +195,21 @@ h2, p {
 }
 /*image end*/
 
-@media (min-width: 900px) {
+@media only screen and ( min-width:400px) {
+    .mockup {
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (min-width: 900px) {
     /*.main-container, .project-info {
         display:flex;
     }*/
+    .gameover-box, .portfolio-box, .capital-box, .luvers-box {
+        display: flex;
+    }
 
     .mockup {
         width: 40%;
@@ -210,11 +217,6 @@ h2, p {
 }
 
 @media only screen and (min-width: 1400px) {
-    .project-info h2 {
-        font-size: 60px;
-        margin: 0px;
-    }
-
     p {
         font-size: 20px;
     }
@@ -224,9 +226,7 @@ h2, p {
     }
 
     .mockup {
-        width: 10%;
-        
-        object-fit: cover;
+        width: 45%;
     }
 
     /*.github-link1 {
