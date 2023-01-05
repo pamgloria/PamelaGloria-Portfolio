@@ -101,11 +101,11 @@ p a:hover {
 }
 
 .flexbox.flexbox1 {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .flexbox.flexbox2 {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 /*flexbox end*/
 
@@ -120,6 +120,14 @@ footer {
 p.footer {
     font-size: 20px;
 }
+
+/*image scolling start*/ /*made changes here!!!!!1*/
+.profile, .aboutlogo {
+    top: 90px;
+    position: -webkit-sticky;
+    position: sticky;
+}
+/*image scrolling end*/
 
 @media (min-width: 900px) {
     .flexboxContainer {
