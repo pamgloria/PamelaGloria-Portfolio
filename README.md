@@ -6,4 +6,4 @@ Here I have shared some current projects I am working on but I hope to upload mo
 ## Contact
 For any inqueries and/or statments, shoot me an email: pamela.o.gloria@gmail.com <br />
 <br />
-![](https://github.com/pamgloria/PamelaGloria-Portfolio/blob/main/images/dancing-banana.gif)
+

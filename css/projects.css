@@ -90,7 +90,6 @@ header .nav a:hover {
     border-radius: 20px;
 }
 
-
 .project-info {
     flex: 3; 
     
@@ -180,7 +179,10 @@ h2, p {
 /*image start*/
 .projectlogo {
     width: 100%;
-   
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+    margin-top: 20px;
 }
 
 .mockup {
